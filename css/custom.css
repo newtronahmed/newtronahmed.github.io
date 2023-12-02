@@ -163,3 +163,9 @@
   #main .social-links a:hover {
 	background: #1c7d32;
   }
+
+  #main {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+  }
