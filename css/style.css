@@ -508,6 +508,7 @@ h3 {
 
 .project-image-box {
   position: relative;
+  width: 100%;
 }
 
 .project-img-link {
