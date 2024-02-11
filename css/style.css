@@ -369,7 +369,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding-left: 20px;
   padding-bottom: 10rem;
 }
 
@@ -451,6 +451,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
+  padding-left: 20px;
   padding-bottom: 10rem;
 }
 
@@ -578,7 +579,7 @@ h3 {
   justify-content: center;
   align-items: center;
   padding-bottom: 10rem;
-
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -681,6 +682,13 @@ footer span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/**
+section Primary tech stack
+*/
+#primary-tech-stack {
+  padding-left: 20px;
 }
 
 /******************************************
