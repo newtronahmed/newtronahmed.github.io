@@ -230,9 +230,9 @@
     </main> -->
 
     <div id="tsParticles">
-      <div id="main" style="height: 100vh; width: 100%;">
+      <div id="main" style="height: 100vh;">
           <h1><a href="index.html">Ahmed Zubairu </a></h1>
-          <h2 style="color:#fff">I'm <span id="typed" class="typing" style="color:#12D640"></span></h2>
+          <h2 style="color:#fff; width: 100%;">I'm <span id="typed" class="typing" style="color:#12D640;max-width: 100%;"></span></h2>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/ahmed-zubairu-ab625b184/" target="_blank" class="linkedin">
               <img src="img/in.svg" alt="LinkedIn Icon" />
@@ -752,7 +752,7 @@
                     }
                 },
                 shape: {
-                    type: ["circle"],
+                    type: ["triangle" ],
                 },
                 size: {
                     value: 6,
@@ -769,7 +769,7 @@
                 }
             }});
       var typed = new Typed('#typed', {
-      strings: ['a <i> Software Engineer</i> .', '&amp; <i>AI Enthusiast</i>'],
+      strings: ['a <i> Software Engineer</i> ', '&amp; <i>AI Enthusiast</i>.'],
       typeSpeed: 50,
       loop: true,
     });
