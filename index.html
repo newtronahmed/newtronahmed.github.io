@@ -739,11 +739,22 @@ business problems through software
   <script>
     tsParticles.load("tsParticles", {
             particles: {
+              move: {
+                bounce: false,
+                enable: true,
+                speed: 2
+              },
+              links: {
+                enable: true,
+              },
                 number: {
-                    value: 200
+                    value: 50
+                },
+                opacity: {
+                  value : { min: 0.3, max: 1}
                 },
                 color: {
-                    value: "random",
+                    value: "#fff",
                     animation: {
                         enable: true,
                         speed: 40,
@@ -751,11 +762,11 @@ business problems through software
                     }
                 },
                 shape: {
-                    type: ["triangle" ],
+                    type: ["circle" ],
                 },
                 size: {
-                    value: 6,
-                    random: true,
+                    value: {  min: 1, max: 5},
+                  
                     animation: {
                         enable: true,
                         speed: 20,
