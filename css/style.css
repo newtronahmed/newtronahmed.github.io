@@ -689,6 +689,7 @@ section Primary tech stack
 */
 #primary-tech-stack {
   padding-left: 20px;
+  padding-bottom: 10rem;
 }
 
 /******************************************
@@ -1068,7 +1069,7 @@ section Primary tech stack
 }
 .hs {
   display: flex;
-  animation: hs-scroll 25s ease-in infinite;
+  animation: hs-scroll 20s ease-out infinite;
 }
 .hs img {
   width: 10rem;
@@ -1077,9 +1078,9 @@ section Primary tech stack
 
 @keyframes hs-scroll {
   0% {
-    transform: translate(100%);
+    transform: translate(-100%);
   }
   100% {
-    transform: translate(-105%);
+    transform: translate(100%);
   }
 }
