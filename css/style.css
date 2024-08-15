@@ -1084,3 +1084,288 @@ section Primary tech stack
     transform: translate(100%);
   }
 }
+/* Base Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f7f8fc;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Global Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #1f1f1f;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #f7f8fc;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link a:hover {
+  color: #12d640;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #f7f8fc;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger:hover div {
+  background-color: #12d640;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a img {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+  filter: invert(63%) sepia(73%) saturate(447%) hue-rotate(108deg) brightness(96%) contrast(92%);
+}
+
+/* Hero Section */
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url('img/hero-bg.jpg') no-repeat center/cover;
+  color: #f7f8fc;
+  padding: 2rem;
+}
+
+#main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #12d640;
+}
+
+#main h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* About Section */
+#about {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-text span {
+  color: #12d640;
+  font-weight: 600;
+}
+
+.profile-img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech Stack Section */
+#primary-tech-stack {
+  background-color: #f7f8fc;
+  padding: 6rem 0;
+}
+
+#primary-tech-stack h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hs img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.hs img:hover {
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+  padding: 6rem 0;
+}
+
+.featured-projects-box h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-details-box {
+  flex: 1;
+}
+
+.project-details-box span {
+  font-size: 0.9rem;
+  color: #12d640;
+}
+
+.project-details-box h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.project-details-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.project-tools {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-links img {
+  width: 25px;
+  transition: filter 0.3s ease;
+}
+
+.project-links img:hover {
+  filter: invert(63%) sepia(73%) saturate(447%) hue-rotate(108deg) brightness(96%) contrast(92%);
+}
+
+.project-image-box img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav-link a {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+}
